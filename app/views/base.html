@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--Homemade with Python's Flask framework (and its Jinja2 template engine), Backbone, and jQuery!-->
+<html>
+	<head>
+		{% block head %}
+			<title>Llamapocalypse</title>
+
+			<!--Google fonts-->
+			<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lusitana">
+			<!--End Google fonts-->
+
+			<!--SCSS/CSS-->
+
+			<!--End SCSS/CSS-->
+		{% endblock %}
+	</head>
+
+	<body>
+		<section id = 'container'>
+			<section id = 'mainHeader'>
+				{% block header %}
+					{% include '_mainHeader.html' %}
+				{% endblock %}
+			</section>
+			<section id = 'mainNav'>
+				{% block mainNav %}
+					{% include '_mainNav.html' %}
+				{% endblock %}
+   			</section>
+
+   			<section id = 'content'>
+   				{% block content %}
+
+   				{% endblock %}
+			</section>
+
+    		<section id = 'footer'>
+        		{% block footer %}
+					{% include '_footer.html' %}
+        		{% endblock %}
+    		</section>
+   		</section>
+	</body>
+	<!--jQuery and vanilla JS, included at the bottom to avoid conflicts in utilizing HTML elements at load-time:-->
+		<script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
+	<!--End jQuery and JS-->
+</html>

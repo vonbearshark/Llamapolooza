@@ -81,7 +81,15 @@ I'll be grabbing some of this from my previous projects, but nothing major, but 
 Alright, done and done. Basic framework is there and its running on localhost: 5000.
 
 ================================================
+Saturday September 20, 2014 2:50 pm
 
+Okay, so maybe I am getting ahead of myself, but I think what I want to do is have the index as a sort-of entrance to the site itself. I mean, the index should give a rundown of what is going on with this llama-pocalypse world, and prompt users to enter the full site.
+
+I'm going to make the base html and index to fit this. I'll add some test copy to the index, just to make sure everything is running smoothly.
+
+Okay, so I have broken up this index-entrance page to include two partials: entranceCopy (for the backstory copy), and entraceImage (for the llama image).
+
+================================================
 
 
 
