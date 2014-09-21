@@ -99,3 +99,11 @@ This just in: Okay, wow. So the real world just came by and I had to step out fo
 Anyway, I have uploaded all of the above, and made some edits. The animated rainbow llama favicon does not work in Chrome, only Firefox. Shame. Oh well.
 
 ================================================
+Saturday September 20, 2014 11:15 pm
+
+Alright, now that most of the gang is here, let's add the style. I will be using Flask-SCSS. This is relatively new to me, so fingers crossed. Downloading now. It threw an exception telling me the C extension could not be compiled; fine by me!
+
+Well 20 minutes later, and I think that SCSS really isn't worth the shoehorn you have to pull with Flask. It's just not meant to be I guess. Moving on.
+
+Added a slew of basic stylization. Just enough to get us in a position to test out the CSS pictures.
+
