@@ -1,0 +1,116 @@
+
+/*==========BEGIN universals==========*/
+
+*
+{
+	padding-right: 0.5em;
+    padding-left: 0.5em;
+    background-color: rgb(240, 240, 240);
+}
+ul *
+{
+    list-style-type: none;
+}
+a
+{
+	padding: 0;
+	margin: 0 auto;
+}
+a:link
+{
+    color: #BD3548;
+    text-decoration: none;
+}
+a:visited
+{
+    color: #BD3548;
+    text-decoration: none;
+}
+a:hover
+{
+    color: #821121;
+    text-decoration: none;
+}
+a:active
+{
+    color: #BD3548;
+    text-decoration: none;
+}
+body
+{
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content
+{
+	float: left;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*==========END universals==========*/
+
+/*==========BEGIN mainheader===========*/
+
+#mainHeader h1
+{
+	font-family: 'Playball', serif;
+	font-size: 800%;
+	text-align: center;
+	padding: 0;
+	margin-bottom: 0;
+}
+#mainHeader p
+{
+	font-family: 'Amatic SC', serif;
+	font-size: 300%;
+	padding-bottom: 0.5em;
+}
+#mainHeader
+{
+  	-webkit-box-shadow: 0 8px 6px -6px gray;
+    -moz-box-shadow: 0 8px 6px -6px gray;
+    box-shadow: 0 8px 6px -6px gray;
+	display: block;
+}
+
+/*===========END mainHeader==========*/
+
+/*==========BEGIN mainNav and footerNav===========*/
+
+#mainNav, #footerNav
+{
+	font-family: 'Lobster', serif;
+	font-size: 170%;
+	padding: 0;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+#mainNav li
+{
+	display: inline;
+}
+#footer p
+{
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 75%;
+}
+
+/*==========END mainNav and footerNav===========*/
+
+/*==========BEGIN entrance===========*/
+
+#entranceCopy
+{
+
+}
+
+/*==========END entrance===========*/
+
+#entranceImage p
+{
+
+}
