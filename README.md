@@ -90,6 +90,12 @@ I'm going to make the base html and index to fit this. I'll add some test copy t
 Okay, so I have broken up this index-entrance page to include two partials: entranceCopy (for the backstory copy), and entraceImage (for the llama image).
 
 ================================================
+Saturday September 20, 2014 4:00 pm
 
+Editing the Main Header, the Main Nav, and the footer--all partials. Also I know I said I was going to make a favicon, but I may have found a better idea.
 
+This just in: Okay, wow. So the real world just came by and I had to step out for the day. That is now taken care of, but I'm afraid it may have set me back a day. I'm considering pushin back L-Day to this Tuesday, instead of Monday. I'll just keep trucking and see where I stand.
 
+Anyway, I have uploaded all of the above, and made some edits. The animated rainbow llama favicon does not work in Chrome, only Firefox. Shame. Oh well.
+
+================================================
