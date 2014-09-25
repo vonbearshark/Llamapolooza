@@ -1,24 +1,38 @@
 <!DOCTYPE html>
-<!--Homemade with Python's Flask framework (and its Jinja2 template engine), Backbone, and jQuery!-->
 <html>
 	<head>
 		{% block head %}
-			{% include '_headBlock.html' %}
+			<title>Llamapocalypse</title>
+
+			<!--Google fonts-->
+			<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway">
+			<link href="//fonts.googleapis.com/css?family=Butcherman:400" rel="stylesheet" type="text/css">
+			<!--End Google fonts-->
+
+			<!--SCSS/CSS-->
+			<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+			<!--End SCSS/CSS-->
+
+			<!--favicon-->
+			<link rel="shortcut icon" href="static/rainbowLlamaFavicon.gif" type="image/gif">
+			<!--End favicon-->
 		{% endblock %}
 	</head>
 
 	<body>
 		<section id = 'container'>
-			<section id = 'mainHeader'>
-				{% block header %}
-					{% include '_mainHeader.html' %}
-				{% endblock %}
-			</section>
-			<section id = 'mainNav'>
-				{% block mainNav %}
-					{% include '_mainNav.html' %}
-				{% endblock %}
-   			</section>
+			<section id = 'mainHeader_mainNav'>
+				<section id = 'mainHeader'>
+					{% block header %}
+						{% include '_mainHeader.html' %}
+					{% endblock %}
+				</section>
+				<section id = 'mainNav'>
+					{% block mainNav %}
+						{% include '_mainNav.html' %}
+					{% endblock %}
+	   			</section>
+	   		</section>
 
    			<section id = 'content'>
    				{% block content %}
@@ -33,7 +47,11 @@
     		</section>
    		</section>
 	</body>
-	<!--jQuery and vanilla JS, included at the bottom to avoid conflicts in utilizing HTML elements at load-time:-
-		<script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
-	<End jQuery and JS-->
+	<!--JS, included at the bottom to avoid conflicts in utilizing HTML elements at load-time:-->
+	<script type="text/javascript" src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='scripts/llamaAttributes.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='scripts/llamaBuilder.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='scripts/slides.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='scripts/drLlamaGuide.js') }}"></script>
+	<!--End JS-->
 </html>
