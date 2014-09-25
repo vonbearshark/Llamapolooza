@@ -107,3 +107,81 @@ Well 20 minutes later, and I think that SCSS really isn't worth the shoehorn you
 
 Added a slew of basic stylization. Just enough to get us in a position to test out the CSS pictures.
 
+================================================
+Saturday September 20, 2014 12:30 pm
+
+Time for the moment of truth. I'm going to start making the llama in pure CSS. Not only will I make the outline, but I want to add layers in different colors, to be manipulated by the jQuery.
+
+Wish me luck.
+
+Wow. Okay well that was disappointing. There's no way this will work. I need to switch gears, and fast. I'll just create the images with GIMP. That's alright.
+
+(I am still going to make some things in pure CSS, such as the speech bubble(s).)
+
+Ha! So I have been up most of the night and in to the morning working with GIMP, creating the llama images. I have to admit, it has been a blast. I couldn't be happier with this switch.
+
+As I mentioned, I believe in total transparency, so I am going to leave my terrible ideas up for everyone to see; maybe someone can learn something from my mistakes.
+
+Anyway, I am now going to upload all of these llama images, and even animate them with jQuery.
+
+I am now wondering if this new image style makes Backbone Irrelevent. In fact, I'll bet I can just manipulate the canvas element without actually neededing more than one page! That's it: I'm making this a full-fledged single-page application from the canvas functionality!
+
+So right now I have gotten rid of that "entrance" idea; everything is coming off of the base template.
+
+I made a stand-in for the footer, the main nav, and the main header. And now the index includes what I just mentioned, as well as two canvases (the "guiding" llama, and the "slides"), and a separate page for copy.
+
+My idea with this is that I will create a page of "slides" (_llamaCanvas) and a page of copy (_copy); then, the user can move the dr. llama back and forth and a collision with a certain point would trigger the next "slide" and corresponding copy to render to the canvas.
+
+(I like to think that this changes show less my inability to plan [cut me some slack--I only had a day!], and more my ability to adjust with diversity!)
+
+I'm going to set this up with the javascript and test it out.
+
+================================================
+Tuesday September 22, 2014 4:30 pm
+
+Yiiikes. What year is it? So, I got a little carried away in my ideation (as I am want to do). I am well-past my self-esablished deadline, but, then again, I thought that might happen if I ended up passing the dealine at all (I have a few tests and quizes this week); and it was a rather radical shift in production with this canvas idea.
+
+Speaking of which! I am proud to announce the current status of the application, and the framework that I think will really work going forward.
+
+So here's where we are at: 
+
+I have created a collection of separate JavaScript files, and I'll explain the project based on each of their functionality.
+
+-In the main file (main.js), I have declard the universals--that is all of the constants I'm going to need in the project--including the canvas elements. There will be two canvasses: the first is the "slides" canvas: this is where the scenes from the presentation of our lovely llama guide (who I have been calling Dr. Llama Guide) will render. I'll talk more about this later, but think of this as his powerpoint presenation.
+There is also the Dr. Llama canvas. this will be the moving Guide. The user can use the D-Pad (or A and D keys) to move him back and forth between slides.
+
+Every image is a standard height and width, and all are rendered at Y=0. Of course, I wouldn't be a challenge to mix all of this up; but for my purposes, it is much simplier this way.
+
+-The Dr. Llama slide file (drLlamaGuide.js) contains all the information about our guide. First, it creates the guide from a constructor I will get to in a sec, and draws him to the screen. It also sets a listener for key pressing to the window (I prefer this over an active element for my purposes, because the entire site operates under this functionality). 
+Then there is the boundry box and collision detection. I hope the code is self-explanatory, but while a key is pressed, I move the dr Llama 10 paces in the appriate direction, then clear (a sort-of buffer, I guess) the canvas, and reprint him in his new spot.
+I am set the left boundry to the X-axis value of the element, and the right boundry to an image-width's right from the X axis coordinate. I also set up collision detection on both sides of the canvas element, and I record collision directions based on these overlap. If it hits, it triggers the collision detecting function, collider switch; if it hits right, it renders the next slide to the right, if left, left. 
+I have also included a navigation functionality I am fairly proud of, in which the user can click on a slide-nav element and render the appropriate slide. Also, the nav element is "highleted according to the slide the user is currently on."
+
+================================================
+Tuesday September 22, 2014 8:30 pm
+
+Still here? Moving on.
+
+So, I have come up with a slide-creation system I am  pretty proud of. In llamaAttributes.js, I create instances of the llama attributes constructor, which is just a source of the apprpriate file, so that I can use the shorthand name later. These attributes contain the base llama (which will be the body for all of our llama overlords, in my attempt toward some dystopian-PR humor), as well as all sorts of clothes and accessories I have spent more time on than I will be admitting to here.
+
+Using these attributes, we can create an individual llama (like some sort of llama-god). Every llama gets the same body. Then, accessories (clothes, etc.) are passed in as arguments, and each is added to the body and printed to the canvas in the x-coordinate that was passed in to the builder. (I also included a little move'n and shake'n for dr. llama that I mentioned earlier, as well as a few getters.)
+
+-Finally, we can make the individual slides by copying in the text-copy in HTML form (if there was more, or if theses were more extensive I would have a more organized system, like the Attributes), as well as each individual llama. The slides are then added to an array to be used in navigation!
+
+================================================
+Tuesday September 22, 2014 10:30 pm
+
+Really, the hardest part was getting each Attribute-image in the for-loop to wait until the previous is loaded. (The for loop would execute too quickly and it would only display the last accessory.) I tried everything: timeout delays, a recursive function, everything I could think of. Finally, I found this article solved my biggest hiccups: http://www.jaypan.com/tutorial/javascript-passing-arguments-anonymous-functions-without-firing-function (though my solution, I think, is even more elegant than his) (ref: line 42, llamaBuilder.js.
+
+I am almost done with this JavaScript functionality, and I will be commiting it soon. 
+
+I apologize for my lack of correpsondence in this development, but I have been a little short on time with classes. Likewise, I won't be able to work on this again until Thursday night. See you then!
+
+================================================
+Thursday September 25, 2014 6:15 p.m.
+
+I'm back! And I'm on a mission. I have just updated the Github Issues to reflect my project's new direction and directives. I'm going to need to restyle the aesthetics, and make the actual slides from the builders, mostly.
+
+Again, normally, my commits would not be so extensive, but given my schedule this week, the huge overhaul the project has undergone, the casual nature of this project, and the notes I have taken here, I'm breaking from my usual practices. With that said, I am commiting now.
+
+================================================
