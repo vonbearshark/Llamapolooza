@@ -168,6 +168,10 @@ Using these attributes, we can create an individual llama (like some sort of lla
 
 -Finally, we can make the individual slides by copying in the text-copy in HTML form (if there was more, or if theses were more extensive I would have a more organized system, like the Attributes), as well as each individual llama. The slides are then added to an array to be used in navigation!
 
+This way the system is super-reusable: the possibilities of Llama slide and copy combinations is as endless as your imagination! 
+
+In fact, with more time (or as needed), I could probably rig up a way that slides were randomly generated within certain parameters... Maybe some other time.
+
 ================================================
 Tuesday September 22, 2014 10:30 pm
 
@@ -183,5 +187,34 @@ Thursday September 25, 2014 6:15 p.m.
 I'm back! And I'm on a mission. I have just updated the Github Issues to reflect my project's new direction and directives. I'm going to need to restyle the aesthetics, and make the actual slides from the builders, mostly.
 
 Again, normally, my commits would not be so extensive, but given my schedule this week, the huge overhaul the project has undergone, the casual nature of this project, and the notes I have taken here, I'm breaking from my usual practices. With that said, I am commiting now.
+
+================================================
+Thursday September 22, 2014 10:30 p.m.
+
+ Great, no conflicts. So now it is time to stylize this mortherllama. Google Fonts seems to make everything look better, so I'll probably start there. Since I know the JavaScript functionality works, I'm going to sub in the some Lorem Ipsum in to mimmic paragraph size. (Here's an awesome site I found to generate this lovely gibberish; http://www.lipsum.com/!)
+
+I also am making sure that the application is condensed to a standard size to fit equally across most desktop browsers.
+
+And I'd like to create one of those pure-CSS images I mentioned: I was thinking a text-bubble surround the text?
+
+I've also added a 'Next Slide' and 'Previous Slide' footer in the footer, in case the user forgot how progression works. I hope its alright that this footer does not respond to being in the state of the first or last stage--it's just static, and I'm pretty alright with that.
+
+================================================
+Friday September 26, 2014 9:30 a.m.
+
+Wooo-eeee. She's lookin' mighty purty.
+
+I've edited the Nav layout, and I've justified and designed copy of the slides. I really like the way it turned out.
+
+So, when looking though some of the fonts, I had this cool idea that I could stimulate a psuedo-command line/typewriter environment. I think it works well with the scence, but it was crazy hard to get right, and, at the risk of it being underappreciated, I'll delve into the contraption a little bit (slides.js, line 40 onward):
+
+-First, and easily enough, I knew I needed a recursive function to take the individual character of the text, and print them on a delay. No sweat.
+-My biggest issue was ignoring tags as they came in; the canvas would flicker the p tags with the rest of the text for a second. Luckily, I found this awesome Stack Overflow snippet: http://jsfiddle.net/creed88/VG8MJ/1/.
+-I also had to figure a way to start and stop the animation when the user followed linked between slides. This just meant another tracking variable that stopped all animations when the user moved around. I guess it's kind of buggy that the text simply picks up where it left off if the user interrupts the text and comes back, but I kind of like it.
+-I also touched up the typewriter animation with a delay between paragraphs in keeping with the oldschool command line style.
+
+In other news, I fixed flickering with the Dr. Llama movement by drawing both before and after the clearing of the canvas. It still happens here or there, but its much better than before. I also doubled the movement speed to 10 so there will be less opportunity for flickering.
+
+Finally, I have my pure-CSS image! The text bubble around the slides' copy! First, I had to make a bubbled-border around the text, and then overlay a triangle to the right; looks awesome and I am happy with it.
 
 ================================================

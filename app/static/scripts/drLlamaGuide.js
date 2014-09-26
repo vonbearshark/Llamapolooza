@@ -32,6 +32,8 @@ function moveDrLlama(e)
 		{
 			drLlama.moveLeft();
 
+			drLlama.printLlama();
+
 			clearCanvas(DRLLAMACANV2D);
 
 			drLlama.printLlama();
@@ -50,6 +52,8 @@ function moveDrLlama(e)
 		else
 		{
 			drLlama.moveRight();
+
+			drLlama.printLlama();
 
 			clearCanvas(DRLLAMACANV2D);
 
@@ -72,7 +76,14 @@ function rightCollide()
 	countTracker++;
     document.getElementById("navSlide" + (countTracker - 1)).style.color = "#BD3548";
     document.getElementById("navSlide" + countTracker).style.color = "#821121";
+
+	for (var i = 0; i <  slides.length; i++)
+	{
+   		slides[i].stopTypewriter();
+	}
+	slides[countTracker].startTypewriter();
     slides[countTracker].printLlamaSlide();
+
     drLlama.moveCenter();
 	clearCanvas(DRLLAMACANV2D);
     drLlama.printLlama();
@@ -83,7 +94,14 @@ function leftCollide()
 	countTracker--;
     document.getElementById("navSlide" + (countTracker + 1)).style.color = "#BD3548";
     document.getElementById("navSlide" + countTracker).style.color = "#821121";
+
+	for (var i = 0; i <  slides.length; i++)
+	{
+   		slides[i].stopTypewriter();
+	}
+	slides[countTracker].startTypewriter();
     slides[countTracker].printLlamaSlide();
+
     drLlama.moveCenter();
 	clearCanvas(DRLLAMACANV2D);
     drLlama.printLlama();
@@ -96,7 +114,15 @@ function linkCollide()
 		document.getElementById("navSlide" + i).style.color = "#BD3548";
 	}
     document.getElementById("navSlide" + countTracker).style.color = "#821121";
+
+	for (var i = 0; i <  slides.length; i++)
+	{
+   		slides[i].stopTypewriter();
+	}
+	slides[countTracker].startTypewriter();
     slides[countTracker].printLlamaSlide();
+
+
     drLlama.moveCenter();
 	clearCanvas(DRLLAMACANV2D);
     drLlama.printLlama();
