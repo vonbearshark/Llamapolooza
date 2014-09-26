@@ -74,16 +74,17 @@ function llamaBuilder ()
 
 	this.moveLeft = function()
 	{
-		return this.xCoord -= 5;
+		return this.xCoord -= 10;
 	};
 	this.moveRight = function()
 	{
-		return this.xCoord += 5;
+		return this.xCoord += 10;
 	};
 	this.moveCenter = function()
 	{
 		return this.xCoord = (CANVASWIDTH/2) - (width/2);
 	};
+	//
 }
 
 /*==========END Llama Builder Class==========*/

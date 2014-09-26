@@ -3,8 +3,6 @@
 
 *
 {
-	padding-right: 0.5em;
-    padding-left: 0.5em;
     background-color: rgb(240, 240, 240);
 }
 ul *
@@ -35,22 +33,11 @@ a:active
     text-decoration: none;
     cursor: pointer;
 }
-body
-{
-    max-width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
-}
-#content
-{
-	float: left;
-	margin-right: auto;
-	margin-left: auto;
-	width: 1024px;
-}
 #container
 {
 	width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*==========END universals==========*/
@@ -73,17 +60,17 @@ body
 
 #mainHeader h1
 {
-	font-family: 'Butcherman', serif;
+	font-family: 'Creepster', serif;
 	font-size: 150%;
 	padding: 0.25em;
+	padding-right: 1em;
 	margin: 0.25em;
+    color: #821121;
 }
 
 #mainNav
 {
 	display: inline;
-	float: right;
-	padding: 0.25em;
 	margin: 0.25em;
 }
 #mainNav li
@@ -91,28 +78,60 @@ body
 	display: inline;
 	font-family: 'Raleway', serif;
 	font-size: 75%;
-	padding: 0.25em;
+	padding: 1em;
 	margin: 0.25em;
 }
+
+/*==========END mainheader and mainNav===========*/
+
+/*==========BEGIN footer===========*/
+
 #footer p
 {
-	text-align: center;
 	font-family: 'Raleway', sans-serif;
 	font-size: 75%;
 }
-
-/*==========END mainHeader and mainNav===========*/
-
-/*==========BEGIN llamaCopy===========*/
-
-
-/*==========END llamaCopy===========*/
-
-/*==========BEGIN Llama canvases==========*/
-
-.llamaSlide
+#nextSlideFooter
 {
-	display: none;
+	float: right;
+}
+#previousSlideFooter
+{
+	float: left;
 }
 
-/*==========END Llama canvases==========*/
+
+/*==========END footer===========*/
+
+/*==========BEGIN llamaCopySlide===========*/
+
+#copyTextBubble
+{
+	position: relative; /* keeps the text bubble and it's triangle alligned */
+}
+#llamaCopySlide
+{
+    text-align: justify;
+    font-family: 'Special Elite', sans-serif;
+
+    border: 3px solid black;
+	-moz-border-radius:    10px;
+   	-webkit-border-radius: 10px;
+   	border-radius:         10px;
+   	margin: 30px;
+   	padding: 0.75em;
+}
+#textBubbleTriangle
+{
+	position: absolute; /* overlay over the copy bubble */ 
+	bottom: 10px;
+	left: 5px;
+
+	width: 0;
+	height: 0;
+	border-top: 15px solid transparent;
+	border-right: 25px solid black;
+	border-bottom: 15px solid transparent;
+}
+
+/*==========END LlamaCopySlide===========*/
