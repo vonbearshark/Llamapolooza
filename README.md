@@ -235,4 +235,6 @@ Friday September 26, 2014 11:30 p.m.
 Time to deploy to Heroku. Fingers crossed, but I don't forsee any problems; this project is so small.
 
 ================================================
+Saturday September 26, 2014 12:30 p.m.
 
+It has been a long journey, but I think this project is finally ready for release! Looking back on this wall of text brings a tear to my eye. All hail our llama overlords!
