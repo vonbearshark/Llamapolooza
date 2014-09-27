@@ -230,3 +230,9 @@ I've also added the functionality that sets the scene canvas invisible on the fi
 And I made a contact page, in keeping with the theme. To exit the contact page, click on either the logo or the intro slide link.
 
 ================================================
+Friday September 26, 2014 11:30 p.m.
+
+Time to deploy to Heroku. Fingers crossed, but I don't forsee any problems; this project is so small.
+
+================================================
+
