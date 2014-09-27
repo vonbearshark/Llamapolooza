@@ -108,6 +108,7 @@ function llamaSlide (copy)
 		}
 
 		type(); //inititates the recusive, animated printing function function
+
 	};
 	//
 }
@@ -119,15 +120,15 @@ var slide0 = new llamaSlide(
 	<p>As you are painfully aware, the year is 3014, and the superior llama species has vanquished your forces in glorious battle!</p>\
 	<p>In fact, if you're seeing this, you are probably enslaved.<\p>\
 	<p>Ha ha! What a funny turn of events!</p>\
-	<p>We have prepared this presentation, in an effort to forward your appreciation for our peoples, and to ease the transition into your servitude.</p>\
+	<p>We have prepared this presentation in an effort to forward your appreciation for our peoples, and to ease the transition into your servitude.</p>\
 	<p>Really, once you've made yourself at home you will hardly notice the security measures we have taken to keep you impotent-</p>\
 	<p>...Err <i>safe</i></p>\
-	<p>So, while we wait around for Stockholm Syndrome to kick in, allow me to guide you through a brief demonstration on our peoples: who we are, and why we are better.</p>\
+	<p>So, while we wait around for Stockholm Syndrome to kick in, allow me to guide you through a brief demonstration on our peoples: who we are and why we are better.</p>\
 	<p>It's good fun for the whole family...especially the children!</p>\
 	<p>I want this to be a fun little adventure, so feel free to use the Left or Right keys to move me to the next slide. And because we are so flexible and loosy-goosy, just like you humans, you can use the A and D keys as well!</p>\
 	<p>Wow, maybe this technological superiority of ours is what lead to your downfall and eventual enslavement!</p>\
 	<p>Ha, ha! Im kidding.</p>\
-	<p>It was our forced-cannibalism tactics and dismemberment of your leaders.</p>\
+	<p>It was our forced-cannibalism and dismemberment of your leaders.</p>\
 	<p>Onward towards your betterment!</p>")
 
 slide0.addLlamas("none");
@@ -136,7 +137,7 @@ var slide1 = new llamaSlide(
 	"<p>As you can see, we have an array of diverse skills and professions, just like you!</p>\
 	<p>In fact, we have even adopted many of your naming conventions.<p>\
 	<p>For example, here we have llama-doctors, llama-lawyers, business llamas, and entrepreneur-llamas.</p>\
-	<p>We would have drawn more except that our llama-hands make fine motor skills, such as writing difficult</p>\
+	<p>We would have drawn more except that our llama-hands make fine motor skills, such as writing, difficult</p>\
 	<p>Good thing for slave labor!<p>\
 	<p>Isn't it funny how the world will never return to the way it was as you knew it, and this will be the new world order?</p>\
 	<p>I think so...</p>");
@@ -213,7 +214,7 @@ var slide6 = new llamaSlide(
 	"<p>Most humans fell easily to the llama forces.</p>\
 	<p>However, there were notable holdouts.</p>\
 	<p>After months of deliberation and sieging of the human capital cities, the llama-generals had the idea to save resources by eating your people!</p>\
-	<p>Look! There is little pieces of you! We are keeping it close to our hearts.</p>\
+	<p>Look! There are little pieces of you! We are keeping it close to our hearts.</p>\
 	<p>(...Anatomically!)</p>\
 	<p>This could not have gone any better: not only did this save on costly resources, but it also broke your spirit!</p>\
 	<p>Think about this demoralization the next time you want to resist and\\or escape!</p>");
@@ -245,8 +246,10 @@ slide7.addLlamas(llama1, llama2, llama3, llama4);
 
 
 var slide8 = new llamaSlide(
-	"<p>Our team of marginally trained FUN...enthusiasts help enforce a number of the facilities' services, ranging from monitored Information Sessions to personal retreats to the Relaxation Chamber, for especially nervous guests.</p>\
-	<p>You will feel safe and secure in their hands!</p>");
+	"<p>Our team of marginally trained FUN enthusiasts help enforce a number of the facilities' services, ranging from monitored Information Sessions to personal retreats to the Relaxation Chamber, for especially nervous guests.</p>\
+	<p>You will feel safe and secure in their llama-hands!</p>\
+	<p>This may <i>seem</i> like an unfortunate predicament, but remember: when life gives you llamas-</p>\
+	<p>...serve them tirelessly or feel their unrelenting wrath.</p>");
 
 	llama1 = new llamaBuilder(LLAMASCENECANV2D, 100, GICoat, helmet);
 	llama2 = new llamaBuilder(LLAMASCENECANV2D, 150, GICoat, sunglasses, helmet);
