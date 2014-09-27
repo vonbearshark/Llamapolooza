@@ -1,4 +1,5 @@
 Saturday September 20th 12:30 pm
+
 Heya!
 
 I must say, I am excited to get working on this project (llamas 4 ever; llamas 4 life). I think this is a great way to showcase my talents, and allow me to try a few new tricks.
@@ -216,5 +217,16 @@ So, when looking though some of the fonts, I had this cool idea that I could sti
 In other news, I fixed flickering with the Dr. Llama movement by drawing both before and after the clearing of the canvas. It still happens here or there, but its much better than before. I also doubled the movement speed to 10 so there will be less opportunity for flickering.
 
 Finally, I have my pure-CSS image! The text bubble around the slides' copy! First, I had to make a bubbled-border around the text, and then overlay a triangle to the right; looks awesome and I am happy with it.
+
+================================================
+Friday September 26, 2014 1:30 p.m.
+
+After all of this coding, it's time to bring this world to life with the slides' test and images. I am super excited to create this presentation. I won't say much about it here (nothing technical to report), maybe just a few notes on the content for clarification. (I would prefer you got to experience it firsthand.)
+
+Wow, that was a blast. Going to be honest, it really toed the line with some of the darker content there. I hope that doesn't come across the wrong way. I am a totally normal human being, cross my heart.
+
+I've also added the functionality that sets the scene canvas invisible on the first and last page.
+
+And I made a contact page, in keeping with the theme. To exit the contact page, click on either the logo or the intro slide link.
 
 ================================================

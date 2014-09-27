@@ -26,13 +26,14 @@ function llamaBuilder ()
 	//prints both the base and attributes
 	this.printLlama = function()
 	{
+
 		var baseImage = new Image();
 
 		baseImage.onload = function()
 		{
 			this.canv.drawImage(baseImage, this.xCoord, YCOORD, width, height);
 		};
-		//necessary for scope of anon function
+		//for scope of anon function
 		baseImage.canv = this.canv;
 		baseImage.xCoord = this.xCoord;
 		//
@@ -47,7 +48,7 @@ function llamaBuilder ()
   			{
     			this.canv.drawImage(this, this.xCoord, YCOORD, width, height);
   			};
-  			//necessary for scope of anon function
+  			//for scope of anon function
   			attImage.canv = this.canv;
   			attImage.xCoord = this.xCoord;
   			//
@@ -56,6 +57,7 @@ function llamaBuilder ()
 		}
 	};
 	//
+
 	this.retCanv = function()
 	{
 		return this.canv;

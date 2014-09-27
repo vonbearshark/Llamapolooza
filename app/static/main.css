@@ -1,7 +1,7 @@
 
 /*==========BEGIN universals==========*/
 
-*
+html
 {
     background-color: rgb(240, 240, 240);
 }
@@ -49,6 +49,8 @@ a:active
   	-webkit-box-shadow: 0 8px 6px -6px gray;
     -moz-box-shadow: 0 8px 6px -6px gray;
     box-shadow: 0 8px 6px -6px gray;
+    margin: 1em;
+    padding : 1em;
 }
 #mainHeader
 {
@@ -57,28 +59,33 @@ a:active
 	padding: 0.25em;
 	margin: 0.25em;
 }
-
 #mainHeader h1
 {
+	font-size: 175%;
+}
+#mainHeader p
+{
+	font-size: 75%;
+}
+#mainHeader h1,  #mainHeader p
+{
 	font-family: 'Creepster', serif;
-	font-size: 150%;
-	padding: 0.25em;
-	padding-right: 1em;
-	margin: 0.25em;
+	text-align: center;
+	margin: 0;
     color: #821121;
 }
 
 #mainNav
 {
 	display: inline;
-	margin: 0.25em;
+	margin-left: 1em;
 }
 #mainNav li
 {
 	display: inline;
 	font-family: 'Raleway', serif;
 	font-size: 75%;
-	padding: 1em;
+	padding: .25em;
 	margin: 0.25em;
 }
 
@@ -113,25 +120,34 @@ a:active
 {
     text-align: justify;
     font-family: 'Special Elite', sans-serif;
-
-    border: 3px solid black;
-	-moz-border-radius:    10px;
-   	-webkit-border-radius: 10px;
-   	border-radius:         10px;
+    background-color: #D7D6D6;
+    border: 3px solid #D7D6D6;
+	-moz-border-radius:    15px;
+   	-webkit-border-radius: 15px;
+   	border-radius:         15px;
    	margin: 30px;
-   	padding: 0.75em;
+   	padding: 1em;
 }
 #textBubbleTriangle
 {
 	position: absolute; /* overlay over the copy bubble */ 
 	bottom: 10px;
 	left: 5px;
-
 	width: 0;
 	height: 0;
-	border-top: 15px solid transparent;
-	border-right: 25px solid black;
-	border-bottom: 15px solid transparent;
+	border-top: 20px solid transparent;
+	border-right: 30px solid #D7D6D6;
+	border-bottom: 20px solid transparent;
 }
 
 /*==========END LlamaCopySlide===========*/
+
+/*==========BEGIN contact===========*/
+#content
+{
+	font-family: 'Raleway', serif;
+	text-align: justify;
+	padding: 1em;
+	margin: 1em;	
+}
+/*==========END contact===========*/

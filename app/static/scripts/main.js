@@ -25,5 +25,4 @@ function clearCanvas(canvas) //clears the canvas by setting it to white (this wo
 	canvas.clearRect(0, 0, CANVASWIDTH, CANVASHEIGHT)
 }
 
-
 /*==========END Canvas and Univerisals==========*/
