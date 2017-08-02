@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>Llamapocalypse</title>
+
+			<!--Google fonts-->
+			<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway">
+			<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Creepster">
+			<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Special+Elite">
+			<!--End Google fonts-->
+
+			<!--SCSS/CSS-->
+			<link rel="stylesheet" type="text/css" href="./static/main.css">
+			<!--End SCSS/CSS-->
+
+			<!--favicon-->
+			<link rel="shortcut icon" href="static/rainbowLlamaFavicon.gif" type="image/gif">
+			<!--End favicon-->
+	</head>
+
+	<body>
+		<section id = 'container'>
+			<section id = 'mainHeader_mainNav'>
+				<section id = 'mainHeader'>
+            <a href = '/'><h1>L l a m a p o c a l y p s e</h1></a>
+            <p>Hail or else!</p>
+				</section>
+				<section id = 'mainNav'>
+            <nav = 'mainNavBar'>
+                <ul>
+                    <li><a id = 'navSlide0' onclick = 'linkDrawLlamaSlide(this.id.match(/\d+/)[0])' href = '/'>Introduction</a></li>
+                    <li><a id = 'navSlide1' onclick = 'linkDrawLlamaSlide(this.id.match(/\d+/)[0])' href = '#'>Slide1</a></li>
+                    <li><a id = 'navSlide2' onclick = 'linkDrawLlamaSlide(this.id.match(/\d+/)[0])' href = '#'>Slide2</a></li>
+                    <li><a id = 'navSlide3' onclick = 'linkDrawLlamaSlide(this.id.match(/\d+/)[0])' href = '#'>Slide3</a></li>
+                    <li><a id = 'navSlide4' onclick = 'linkDrawLlamaSlide(this.id.match(/\d+/)[0])' href = '#'>Slide4</a></li>
+                    <li><a id = 'navSlide5' onclick = 'linkDrawLlamaSlide(this.id.match(/\d+/)[0])' href = '#'>Slide5</a></li>
+                    <li><a id = 'navSlide6' onclick = 'linkDrawLlamaSlide(this.id.match(/\d+/)[0])' href = '#'>Slide6</a></li>
+                    <li><a id = 'navSlide7' onclick = 'linkDrawLlamaSlide(this.id.match(/\d+/)[0])' href = '#'>Slide7</a></li>
+                    <li><a id = 'navSlide8' onclick = 'linkDrawLlamaSlide(this.id.match(/\d+/)[0])' href = '#'>Slide8</a></li>
+                    <li><a id = 'navSlide9' onclick = 'linkDrawLlamaSlide(this.id.match(/\d+/)[0])' href = '#'>Slide9</a></li>
+                    <li><a id = 'navSlide10' onclick = 'linkDrawLlamaSlide(this.id.match(/\d+/)[0])' href = '#'>Slide10</a></li>
+                </ul>
+            </nav>
+	   			</section>
+	   		</section>
+
+   			<section id = 'content'>
+            <section id = 'llamaImageSection'>
+                <canvas id = 'llamaScene' width = '1024' height = '250'>Please upgrade your browser!</canvas>
+            </section>
+            <section id = 'copy'>
+                <section id = 'llamaCopySlide'></section>
+                <div id= 'textBubbleTriangle'></div>
+            </section>
+            <section id = 'drLlamaSection'>
+                <canvas id = 'drLlamaGuide' width = '1024' height = '250'>Please upgrade your browser!</canvas>
+            </section>
+			</section>
+
+    		<section id = 'footer'>
+            <footer>
+            <p id = 'previousSlideFooter'>Previous Slide</p>
+            <p id = 'nextSlideFooter'>Next Slide</p>
+            </footer>
+    		</section>
+   		</section>
+	</body>
+	<!--JS, included at the bottom to avoid conflicts in utilizing HTML elements at load-time:-->
+	<script type="text/javascript" src="./static/scripts/main.js"></script>
+	<script type="text/javascript" src="./static/scripts/llamaAttributes.js"></script>
+	<script type="text/javascript" src="./static/scripts/llamaBuilder.js"></script>
+	<script type="text/javascript" src="./static/scripts/slides.js"></script>
+	<script type="text/javascript" src="./static/scripts/drLlamaGuide.js"></script>
+	<!--End JS-->
+</html>
